@@ -1,5 +1,5 @@
 module.exports = {
     images: {
-      domains: ["motogp-fan-shop.com", "secure.gravatar.com"],
+      domains: ["ivaylotsochev.com", "secure.gravatar.com"],
     },
   }

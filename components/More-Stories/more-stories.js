@@ -19,6 +19,7 @@ export default function MoreStories({ posts }) {
             author={node.author?.node}
             slug={node.slug}
             excerpt={node.excerpt}
+            period={node.posts}
           />
         ))}
       </div>

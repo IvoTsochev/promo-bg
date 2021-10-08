@@ -10,6 +10,8 @@ export default function PostPreview({
   excerpt,
   author,
   slug,
+  posts,
+  period
 }) {
   return (
     <div className='p-4'>
@@ -32,8 +34,17 @@ export default function PostPreview({
       <div
         className="text-lg leading-relaxed mb-4"
         dangerouslySetInnerHTML={{ __html: excerpt }}
-      />
-      <Avatar author={author} />
+        />
+      {/* <Avatar author={author} /> */}
+      {
+        period?.period ? (
+        <div>
+          <p>From: {period.period}</p> 
+          <p>To: {period.period}</p> 
+        </div>
+        ) : ''
+      }
+        
     </div>
   )
 }
